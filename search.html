@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜尋｜元智大學失物招領</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/main.js" defer></script>
+    <script src="js/search.js" defer></script>
+</head>
+<body class="yellow-page">
+<header>
+    <a class="logo-home" href="index.html" aria-label="回到首頁">
+        <div class="logo-container">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <h1>失物招領. <span class="yzu">元智大學</span></h1>
+        </div>
+    </a>
+    <button id="toggle-menu" class="menu-btn" type="button" aria-label="開啟側邊選單" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+</header>
+<nav class="side-menu" aria-label="網站導覽">
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="howtofind.html">如何找東西</a></li>
+        <li><a href="lost.html">找失物</a></li>
+        <li><a href="found.html">撿到失物</a></li>
+        <li><a href="search.html" aria-current="page">搜尋</a></li>
+        <li><a href="statistics.html">失物統計</a></li>
+        <li><a href="explain.html">網站設計思路</a></li>
+    </ul>
+</nav>
+<main class="search-main">
+    <marquee class="top-notice">此頁面大部分是示意畫面，不具有實際功能</marquee>
+    <form class="search-form" id="searchForm" action="#" method="GET">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search items..." name="search">
+        <button type="submit" class="search-button">Search</button>
+    </form>
+    <section class="categories" aria-label="物品分類">
+        <button class="category-button active" type="button" data-filter="all">All</button>
+        <button class="category-button" type="button" data-filter="學生證">學生證</button>
+        <button class="category-button" type="button" data-filter="雨傘">雨傘</button>
+        <button class="category-button" type="button" data-filter="水壺">水壺</button>
+        <button class="category-button" type="button" data-filter="其他">其他</button>
+    </section>
+    <marquee class="bottom-notice">公告半年若無人領取，將送至生輔組。</marquee>
+    <section class="product-grid" id="productGrid">
+        <article class="product-card" data-category="學生證">
+            <img src="images/placeholder-200.svg" alt="學生證圖片">
+            <h3 class="product-title">學生證</h3><p class="product-price">$20.00</p>
+            <button class="add-to-cart" type="button">這我的</button>
+        </article>
+        <article class="product-card" data-category="其他">
+            <img src="images/placeholder-200.svg" alt="耳機圖片">
+            <h3 class="product-title">耳機</h3><p class="product-price">安置於聯合服務櫃檯</p>
+            <button class="add-to-cart" type="button">這我的</button>
+        </article>
+        <article class="product-card" data-category="學生證">
+            <img src="images/placeholder-200.svg" alt="學生證圖片">
+            <h3 class="product-title">學生證</h3><p class="product-price">安置於圖書館櫃台</p>
+            <button class="add-to-cart" type="button">這我的</button>
+        </article>
+        <article class="product-card" data-category="雨傘">
+            <img src="images/placeholder-200.svg" alt="雨傘圖片">
+            <h3 class="product-title">雨傘</h3><p class="product-price">安置於學務處</p>
+            <p>拾獲時間-地點：113/11/31-五館</p>
+            <button class="add-to-cart" type="button">這我的</button>
+        </article>
+    </section>
+    <p id="noResults" class="no-results" hidden>沒有符合條件的項目。</p>
+</main>
+<footer class="fixed-footer">
+    <div class="socials">
+        <a href="https://www.facebook.com/yzu.edu/?locale=zh_TW" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/yzu_ilife/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+        <a href="https://www.yzu.edu.tw/index.php/tw/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i> 官網
+        </a>
+    </div>
+    <p>&copy; 2024 元智大學</p>
+</footer>
+</body>
+</html>

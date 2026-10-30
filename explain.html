@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>網站設計思路｜元智大學失物招領</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/main.js" defer></script>
+</head>
+<body class="document-page">
+<header>
+    <a class="logo-home" href="index.html" aria-label="回到首頁">
+        <div class="logo-container">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <h1>失物招領. <span class="yzu">元智大學</span></h1>
+        </div>
+    </a>
+    <button id="toggle-menu" class="menu-btn" type="button" aria-label="開啟側邊選單" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+</header>
+<nav class="side-menu" aria-label="網站導覽">
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="howtofind.html">如何找東西</a></li>
+        <li><a href="lost.html">找失物</a></li>
+        <li><a href="found.html">撿到失物</a></li>
+        <li><a href="search.html">搜尋</a></li>
+        <li><a href="statistics.html">失物統計</a></li>
+        <li><a href="explain.html" aria-current="page">網站設計思路</a></li>
+    </ul>
+</nav>
+<main class="explain-main">
+    <article class="explain-content">
+        <h2>製作動機</h2>
+        <p>一開始會想設計這個網站的契機，是因為自己有次在學校把東西搞丟，但不知道具體是在哪個地方遺失的。在尋找的過程中，發現學校各處都有失物招領處，如圖書館、學務處、聯合服務櫃檯、警衛室、Dcard、學生群組等，這些遺失物資訊散落在學校各處，一一去尋找也非常麻煩，所以決定善用在資訊管理學系所學會的 HTML、CSS 程式語言，設計出一個能通報、統整、尋找遺失物的網站。</p>
+        <h2>主頁設計的部分</h2>
+        <p>希望能提供簡潔直觀的設計，讓使用者能一目瞭然、馬上找到自己要用到的功能，其餘額外的功能都放置在側邊欄。之所以會只用黃、黑做出強烈的視覺設計，是因為希望使用者能留下強烈的印象，看到黃黑兩色就能馬上聯想到本網站，另一方面是因為我喜歡這兩個顏色。</p>
+        <h2>Found 分頁的部分</h2>
+        <p>採用經典的表單設計，使用 CSS 將所有項目置中，提供使用者直觀的操作方式。原始版本尚未完成圖片上傳、拾獲地點自動定位，以及表單資料同步至搜尋頁與統計頁等功能。</p>
+        <h2>Lost 分頁的部分</h2>
+        <p>採用與 Found 類似的表單設計，將欄位置中排列。原始版本尚未完成圖片上傳、地點自動定位，以及資料統計等功能。</p>
+        <h2>Search 分頁的部分</h2>
+        <p>此分頁礙於技術限制，不能提供真實搜尋及失物上傳功能，因此主要提供示意畫面。網頁參考各大購物平台的頁面設計，透過類似商品卡的設計，讓使用者一眼就能瀏覽想要的資訊。</p>
+        <h2>原始首頁設計草圖</h2>
+        <img class="original-sketch" src="images/original-homepage-sketch.jpg" alt="原始失物招領網站首頁設計草圖">
+    </article>
+</main>
+<footer>
+    <div class="socials">
+        <a href="https://www.facebook.com/yzu.edu/?locale=zh_TW" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/yzu_ilife/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+        <a href="https://www.yzu.edu.tw/index.php/tw/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i> 官網
+        </a>
+    </div>
+    <p>&copy; 2024 元智大學</p>
+</footer>
+</body>
+</html>
